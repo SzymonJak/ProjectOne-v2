@@ -138,3 +138,7 @@ template { display: none; }
 .col-11 { -ms-flex: 91.667%; flex: 91.667%; }
 
 .col-12 { -ms-flex: 100%; flex: 100%; }
+
+.btn, .btn-basic { width: 92px; height: 40px; border-radius: 5px; }
+
+.btn-basic { background-color: #333; }
