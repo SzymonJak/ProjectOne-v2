@@ -1,0 +1,10 @@
+btn {
+    width: 92px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+btn-basic {
+    @extend %btn;
+    background-color: $basic-colour;
+}
