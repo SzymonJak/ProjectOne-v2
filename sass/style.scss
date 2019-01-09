@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
 @import 'variables';
 @import 'mixins';
 @import 'normalize';
 @import 'layout';
 @import 'components/buttons';
+@import 'components/text-styles';
+
+.container {
+    font-family: $brand-font;
+}

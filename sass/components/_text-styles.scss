@@ -1,0 +1,24 @@
+.lg-link {
+    font-size: $page-font-size;
+    color: $link-colour;
+}
+
+.sm-link {
+    font-size: $small-font-size;
+    color: $link-colour;
+}
+
+.paragraph-text {
+    font-size: $small-font-size;
+    color: #000;
+}
+
+.section-font {
+    font-size: $page-font-size;
+    color: $basic-colour;
+}
+
+.header-font {
+    @extend .section-font;
+    text-transform: uppercase;
+}
