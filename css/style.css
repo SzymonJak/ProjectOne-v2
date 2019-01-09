@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -139,6 +140,32 @@ template { display: none; }
 
 .col-12 { -ms-flex: 100%; flex: 100%; }
 
-.btn, .btn-basic { width: 92px; height: 40px; border-radius: 5px; }
+.btn, .btn-basic, .btn-attract { width: 92px; height: 40px; border-radius: 5px; }
+
+.btn-sq, .btn-sq-basic, .btn-sq-attract { width: 40px; height: 40px; border-radius: 5px; }
+
+.btn-long, .btn-long-basic, .btn-long-attract { width: 126px; height: 40px; border-radius: 5px; }
 
 .btn-basic { background-color: #333; }
+
+.btn-sq-basic { background-color: #333; }
+
+.btn-long-basic { background-color: #333; }
+
+.btn-attract { background-color: #f58220; }
+
+.btn-sq-attract { background-color: #f58220; }
+
+.btn-long-attract { background-color: #f58220; }
+
+.lg-link { font-size: 12px; color: #56819f; }
+
+.sm-link { font-size: 10px; color: #56819f; }
+
+.paragraph-text { font-size: 10px; color: #000; }
+
+.section-font, .header-font { font-size: 12px; color: #333; }
+
+.header-font { text-transform: uppercase; }
+
+.container { font-family: "Open Sans", sans-serif; }
