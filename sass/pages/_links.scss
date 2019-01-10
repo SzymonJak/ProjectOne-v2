@@ -1,0 +1,36 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    th {
+        @extend .section-font;
+        text-transform: capitalize;
+        text-align: left;
+        width: 40%;
+    }
+
+    td {
+        @extend .lg-link;
+        text-align: left;
+        width: 60%;
+    }
+}
+
+.table-container {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.table-container tr {
+    border-top: solid 1px $basic-colour;
+    height: 3em;
+}
+
+@media not all and (hover:none) {
+    .table-container tr:hover {
+        background: $basic-hover;
+    }
+}

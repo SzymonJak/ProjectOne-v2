@@ -140,7 +140,7 @@ template { display: none; }
 
 .col-12 { -ms-flex: 100%; flex: 100%; }
 
-.btn, .btn-basic, .btn-attract { width: 92px; height: 40px; border-radius: 5px; }
+.btn, .btn-basic, .btn-attract { width: auto; height: 40px; border-radius: 5px; text-align: center; vertical-align: middle; color: #fff; white-space: nowrap; }
 
 .btn-sq, .btn-sq-basic, .btn-sq-attract { width: 40px; height: 40px; border-radius: 5px; }
 
@@ -158,14 +158,54 @@ template { display: none; }
 
 .btn-long-attract { background-color: #f58220; }
 
-.lg-link { font-size: 12px; color: #56819f; }
+.lg-link, table td { font-size: 12px; color: #56819f; }
 
 .sm-link { font-size: 10px; color: #56819f; }
 
 .paragraph-text { font-size: 10px; color: #000; }
 
-.section-font, .header-font { font-size: 12px; color: #333; }
+.section-font, .header-font, table th { font-size: 12px; color: #333; }
 
-.header-font { text-transform: uppercase; }
+.header-font { font-weight: 600; text-transform: uppercase; }
 
-.container { font-family: "Open Sans", sans-serif; }
+table { table-layout: fixed; border-collapse: collapse; margin: 0 auto; }
+
+table th { text-transform: capitalize; text-align: left; width: 40%; }
+
+table td { text-align: left; width: 60%; }
+
+.table-container { width: 80%; max-width: 700px; margin: 0 auto; padding: 1em; }
+
+.table-container tr { border-top: solid 1px #333; height: 3em; }
+
+@media not all and (hover: none) { .table-container tr:hover { background: #979797; } }
+
+.container { font-family: "Open Sans", sans-serif; max-width: 1280px; }
+
+.content-container { position: absolute; margin-top: 3em; }
+
+article { background: #f5f5f2; }
+
+section { background: #fff; width: 98%; /* missig bottom margin or border */ margin: 1%; }
+
+.underline { padding: 1em 0; border-bottom: solid 1px #f5f5f2; }
+
+.center { text-align: center; }
+
+nav { overflow: hidden; width: 100%; position: fixed; top: 0; right: 0; }
+
+nav ul { margin: 0; padding: 0; list-style-type: none; float: right; }
+
+nav li { display: inline-block; }
+
+nav a { display: block; line-height: 3em; padding: 0 1em; text-decoration: none; }
+
+.sidebar-links { height: 100vh; position: relative; background: #333; }
+
+.sidebar-links ul { margin: 0; padding: 0; list-style-type: none; }
+
+.sidebar-links li { display: block; }
+
+.sidebar-links a { display: block; line-height: 2em; padding: 0 1em; text-decoration: none; color: #979797; font-size: 10px; }
+
+@media not all and (hover: none) { .sidebar-links a:hover { background: #979797; color: #fff; } }

@@ -20,5 +20,6 @@
 
 .header-font {
     @extend .section-font;
+    font-weight: 600;
     text-transform: uppercase;
 }

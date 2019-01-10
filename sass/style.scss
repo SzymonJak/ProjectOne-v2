@@ -6,7 +6,92 @@
 @import 'layout';
 @import 'components/buttons';
 @import 'components/text-styles';
+@import 'pages/links';
 
 .container {
     font-family: $brand-font;
+    max-width: 1280px;
+}
+
+.content-container {
+    position: absolute;
+    margin-top: 3em;
+}
+
+article {
+    background: $background-colour;
+}
+
+section {
+    background: #fff;
+    width: 98%;
+    /* missig bottom margin or border */
+    margin: 1%;
+}
+
+.underline {
+    padding: 1em 0;
+    border-bottom: solid 1px $background-colour;
+}
+
+.center {
+    text-align: center;
+}
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        line-height: 3em;
+        padding: 0 1em;
+        text-decoration: none;
+    }
+}
+
+.sidebar-links {
+    height: 100vh;
+    position: relative;
+    background: $basic-colour;
+
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    }
+
+    li {
+        display: block;
+    }
+
+    a {
+        display: block;
+        line-height: 2em;
+        padding: 0 1em;
+        text-decoration: none;
+        color: $basic-hover;
+        font-size: $small-font-size;
+    }
+}
+
+@media not all and (hover:none) {
+    .sidebar-links a:hover {
+        background: $basic-hover;
+        color: #fff;
+    }
 }
