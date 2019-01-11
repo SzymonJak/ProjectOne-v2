@@ -11,22 +11,26 @@
 .container {
     font-family: $brand-font;
     max-width: 1280px;
+    margin: 0 auto;
 }
 
 .content-container {
-    position: absolute;
-    margin-top: 3em;
+    margin-top: calc(3em + 1em);
 }
 
-article {
+.right-side {
+    width: 100%;
     background: $background-colour;
+}
+
+.sidebar {
+    width: 100%;
 }
 
 section {
     background: #fff;
-    width: 98%;
     /* missig bottom margin or border */
-    margin: 1%;
+    margin: 1em;
 }
 
 .underline {
@@ -39,11 +43,12 @@ section {
 }
 
 nav {
-    overflow: hidden;
-    width: 100%;
+    width: calc(1280px * 0.83333);
     position: fixed;
     top: 0;
-    right: 0;
+    overflow: hidden;
+    line-height: 3em;
+    background: mediumaquamarine;
 
     ul {
     margin: 0;
