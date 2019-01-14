@@ -15,7 +15,8 @@
 }
 
 .content-container {
-    margin-top: calc(3em + 1em);
+    margin-top: calc(3em);
+    
 }
 
 .right-side {
@@ -30,7 +31,9 @@
 section {
     background: #fff;
     /* missig bottom margin or border */
+    box-shadow: 1px 1px 3px #000;
     margin: 1em;
+    
 }
 
 .underline {
