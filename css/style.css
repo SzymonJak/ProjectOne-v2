@@ -390,7 +390,7 @@ template {
 }
 
 .col-10 {
-  flex: 83.333%;
+  flex: 83.333% !important;
 }
 
 .col-11 {
@@ -544,27 +544,27 @@ section h2 {
   text-align: center;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
-  width: calc(1280px * 0.83333);
   position: fixed;
   top: 0;
   overflow: hidden;
-  line-height: 3em;
   background: #fff;
   border-bottom: solid 1px #979797;
-  border-right: solid 1px #979797;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  float: right;
 }
 
 nav li {
   display: inline-block;
-  border-left: 1px solid #979797;
 }
 
 nav a {
@@ -578,36 +578,29 @@ nav i {
   padding: 16px;
 }
 
+.logo {
+  background: #333;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
 .sidebar {
   height: 100vh;
   width: 100%;
   background: #333;
+  display: none;
+  margin-top: 48px;
+  padding-top: 16px;
 }
 
-.logo h1 {
-  margin: 0;
-  padding: 0;
-}
-
-.logo h1 img {
+.show {
   display: block;
-}
-
-.logo ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.logo ul li {
-  display: inline-block;
-}
-
-.logo ul a {
-  line-height: 30px;
-  padding: 0 16px;
-  text-decoration: none;
-  color: #979797;
 }
 
 .sidebar-links ul {

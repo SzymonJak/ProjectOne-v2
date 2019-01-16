@@ -46,26 +46,27 @@ section {
     text-align: center;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
-    width: calc(1280px * 0.83333);
+    
     position: fixed;
     top: 0;
     overflow: hidden;
-    line-height: 3em;
     background: #fff;
     border-bottom: solid 1px $basic-hover;
-    border-right: solid 1px $basic-hover;
 
     ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    float: right;
     }
 
     li {
         display: inline-block;
-        border-left: 1px solid $basic-hover;
     }
 
     a {
@@ -80,39 +81,29 @@ nav {
     }
 }
 
+.logo {
+    background: $basic-colour;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
 .sidebar {
     height: 100vh;
     width: 100%;
     background: $basic-colour;
+    display: none;
+    margin-top: 48px;
+    padding-top: 16px;
 }
 
-.logo {
-
-    h1 {
-        margin: 0;
-        padding: 0;
-
-        img {
-            display: block;
-        }
-    }
-    
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-
-        li {
-            display: inline-block;
-        }
-
-        a {
-            line-height: 30px;
-            padding: 0 16px;
-            text-decoration: none;
-            color: $basic-hover;
-        }
-    }
+.show {
+    display: block;
 }
 
 .sidebar-links {
