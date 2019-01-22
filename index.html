@@ -10,28 +10,11 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col col-2">
-                    <nav class="logo">
-                        <ul class="floatLeft">
-                            <li><h1><img src="https://placeimg.com/150/30/any" alt="Just do it logo | best stats on the web" title="the logo"></h1></li>
-                            <li><a id="hamburger" href="#"><i class="fas fa-bars"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col col-10">
-                    <nav>
-                        <ul class="floatRight">
-                            <li><a href="#"><i class="icon-wallet"></i>1.500$<i class="icon-arrow-down-small"></i></a></li>
-                            <li><a href="#"><i class="icon-notification"></i></a></li>
-                            <li><a href="#"><i class="icon-profile"></i>Bon Jovi</a></li>
-                            <li><a href="#"><i class="icon-quit"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-2">
+            <nav class="logo navLeft">
+                <ul>
+                    <li><a id="hamburger" href="#"><i class="fas fa-bars"></i></a></li>
+                    <!-- <li><img src="https://placeimg.com/100/48/nature" alt="graphics saying Company's Logo" title="Company's Logo"></li> -->
+                </ul>
                     <div class="sidebar">
                         <div class="sidebar-links">
                             <ul>
@@ -45,9 +28,23 @@
                             </ul>
                         </div>
                     </div>
+                </nav>
+            <div class="row">
+                <div class="col col-xl-10">
+                    <nav class="navRight">
+                        <ul>
+                            <li><a href="#"><img class="floatfloat" src="https://placeimg.com/100/48/nature" alt="graphics saying Company's Logo" title="Company's Logo"></a></li>
+                            <li><a href="#"><i class="icon-wallet"></i>1.500$<i class="icon-arrow-down-small"></i></a></li>
+                            <li><a href="#"><i class="icon-notification"></i></a></li>
+                            <li><a href="#"><i class="icon-profile"></i>Bon Jovi</a></li>
+                            <li><a href="#"><i class="icon-quit"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col col-12">
-                    <article class="right-side">
+            </div>
+            <div class="row">
+                <div class="col col-sm-12 col-xl-12">
+                    <article>
                         <div class="content-container">
                             <section class="chart">
                                 <h2 class="underline header-font">General statistics</h2>
@@ -87,6 +84,6 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
-    <script type="text/javascript" src="js/script.js"></script>
 </html>

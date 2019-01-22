@@ -13,15 +13,36 @@
     margin: 0;
 }
 
-.col-1 {flex: 8.333%;}
-.col-2 {flex: 16.667%;}
-.col-3 {flex: 25%;}
-.col-4 {flex: 33.333%;}
-.col-5 {flex: 41.667%;}
-.col-6 {flex: 50%;}
-.col-7 {flex: 58.333%;}
-.col-8 {flex: 66.667%;}
-.col-9 {flex: 75%;}
-.col-10 {flex: 83.333% !important;}
-.col-11 {flex: 91.667%;}
-.col-12 {flex: 100%;}
+@for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+
+  @mixin grid($prefix) {
+    @for $i from 1 through 12 {
+      .col-#{$prefix}-#{$i} {
+        $width: 100% / 12 * $i;
+        flex: 0 0 $width;
+        max-width: $width;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    @include grid('sm');
+  }
+  
+  @media(min-width: 768px) {
+    @include grid('md');
+  }
+  
+  @media(min-width: 992px) {
+    @include grid('lg');
+  }
+  
+  @media(min-width: 1200px) {
+    @include grid('xl');
+  }
