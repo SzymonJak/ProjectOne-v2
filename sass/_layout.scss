@@ -13,6 +13,26 @@
     margin: 0;
 }
 
+.tableStandard {
+  border-collapse: collapse;
+  font-size: $page-font-size;
+  text-align: left;
+
+  th {
+      padding-top: 8px;
+      color: $supportingColour3;
+      
+  }
+
+  td {
+      padding-top: 8px;
+  }
+
+  tr {
+      border-bottom: solid 1px $basic-hover;
+  }
+}
+
 @for $i from 1 through 12 {
     .col-sm-#{$i} {
       $width: 100% / 12 * $i;

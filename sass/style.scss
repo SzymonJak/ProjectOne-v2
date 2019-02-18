@@ -8,6 +8,10 @@
 @import 'components/text-styles';
 @import 'pages/links';
 
+a {
+    text-decoration: none;
+}
+
 .navLeft {
     position: fixed;
     top: 0;
@@ -16,11 +20,8 @@
     width: 48px;
     overflow: hidden;
     transition: width linear .7s;
-    z-index: 1;
+    // z-index: 1;
     background: $basic-colour;
-    &.show {
-        width: 16.667%;
-    }
 
     ul {
     margin: 0;
@@ -34,7 +35,7 @@
 
     a {
         display: block;
-        text-decoration: none;
+        color: $basic-hover;
     }
 }
 
@@ -42,8 +43,8 @@
     padding: 16px 20px;
 }
 
-.navRight {
-    z-index: 0;
+.navTop {
+    // z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -60,19 +61,32 @@
     }
 
     li {
+        padding: 0 8px;
         border-right: solid 1px $basic-hover;
         display: inline-block;
     }
 
     a {
         display: block;
-        text-decoration: none;
+        color: $basic-hover;
+
+        span {
+            color: $link-colour;
+            font-size: $small-font-size;
+        }
     }
 
     i {
         padding: 0 8px;
     }
+}
 
+.floatfloat {
+    position: fixed;
+    display: inline-block;
+    left: 48px;
+    z-index: 2;
+    
 }
 
 img {
@@ -91,9 +105,9 @@ h1 {
     margin: 0 auto;
 }
 
-    .content-container {
-    padding-top: 16px;
-    
+.content-container {
+    margin-top: calc(48px + 16px);
+    margin-left: 48px;
 }
 
 section {
@@ -109,12 +123,8 @@ section {
 }
 
 .underline {
-    padding: 1em 0;
+    padding: 12px 0 12px 12px;
     border-bottom: 1px solid $basic-hover;
-}
-
-.center {
-    text-align: center;
 }
 
 .sidebar {
@@ -140,7 +150,6 @@ section {
             display: block;
             line-height: 2em;
             padding: 0;
-            text-decoration: none;
             color: $basic-hover;
             font-size: $small-font-size;
             white-space: nowrap;
@@ -152,15 +161,106 @@ section {
     }
 }
 
+.sectionContainer {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 0 32px;
+}
+
+.chart {
+    table, img {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    .time-period {
+        text-align: center;
+    }
+
+    h3 {
+        display: block;
+        text-align: left;
+        color: $supportingColour3;
+        font-size: $page-font-size;
+    }
+}
+
+.time-period {
+    
+    p {
+        display: inline-block;
+        line-height: 38px;
+        border: solid 1px $basic-hover;
+        padding: 0 4px;
+
+        i {
+            color: $basic-hover;
+            padding: 0 4px;
+        }
+    }
+    button {
+        display: inline-block;
+        margin-left: 16px;
+        margin-bottom: 4px;
+
+    }
+}
+
+.myTable {
+    padding-bottom: 32px;
+
+    .tableStandard {
+
+        th {
+            padding-right: 96px;
+        }
+    }
+}
+
+.tableLeft {
+    float: left;
+    width: 320px;
+}
+
+.tableRight {
+    float: right;
+    width: 320px;
+}
+
+.chartButtons {
+    padding: 12px 0 24px;
+    text-align: center;
+
+    button {
+    color: $supportingColour3;
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 12px;
+    border: none;
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 12px 0 4px;
+        }
+    }
+}
+
 @media not all and (hover:none) {
     .sidebar-links a:hover {
         background: $basic-hover;
-        color: #fff;
+        color: $supportingColour1;
     }
 
     .logo a:hover {
         background: $basic-hover;
-        color: #fff;   
+        color: $supportingColour1;   
+    }
+
+    .chartButtons button:hover {
+        background: $basic-hover;
     }
 }
 
@@ -177,10 +277,24 @@ section {
     .navLeft {
         width: 100%;
         height: 48px;
+        &.show {
+            height: 50vh;
+        }
     }
 
     .content-container {
         margin-top: 48px; 
     }
+
+  }
+
+  @media(min-width: 768px) {
+
+    .navLeft {    
+        &.show {
+            width: 16.667%;
+        }
+    }
+
 
   }

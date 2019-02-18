@@ -16,3 +16,20 @@ $attention-colour: #f00;
 $background-colour: #f5f5f2;
 $supportingColour1: #fff;
 $supportingColour2: #000;
+$supportingColour3: rgb(75, 75, 75);
+
+.linkColour {
+    color: $link-colour;
+}
+
+.dot-blue {
+    background-color: $link-colour;
+}
+
+.dot-orange {
+    background-color: $attract-colour;
+}
+
+.dot-green {
+    background-color: $marker-colour;
+}
