@@ -7,6 +7,7 @@
 @import 'components/buttons';
 @import 'components/text-styles';
 @import 'pages/links';
+@import 'pages/personal_data';
 
 a {
     text-decoration: none;
@@ -114,7 +115,7 @@ section {
     background: $supportingColour1;
     /* missig bottom margin or border */
     box-shadow: 1px 1px 3px $supportingColour2;
-    margin: 0 1em 1em;
+    margin: 0 16px 16px;
 
     h2 {
         margin: 0;
@@ -187,22 +188,41 @@ section {
 
 .time-period {
     
-    p {
-        display: inline-block;
-        line-height: 38px;
-        border: solid 1px $basic-hover;
-        padding: 0 4px;
-
-        i {
-            color: $basic-hover;
-            padding: 0 4px;
-        }
-    }
     button {
         display: inline-block;
         margin-left: 16px;
         margin-bottom: 4px;
+    }
 
+    div {
+        border: 1px solid $basic-hover;
+        display: inline-flex;
+        position: relative;
+
+        i {
+            color: $basic-hover;
+            padding: 10px 14px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            height: 80%;
+            width: 1px;
+            background: $basic-hover;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 40px;
+            margin: auto;
+        }
+    }
+
+    input[type=date] {
+       border: 0;
+       padding: 5px 10px;
+       appearance: none; 
     }
 }
 
