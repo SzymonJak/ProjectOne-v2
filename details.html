@@ -4,64 +4,134 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ProjectOne - main</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="sass/components/Glyphter.css">
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col col-2 sidebar">
+                <div class="col col-xl-10">
+                        <div class="floatfloat">
+                                <a href="#"><img src="https://placeimg.com/100/48/nature" alt="graphics saying Company's Logo" title="Company's Logo"></a>
+                            </div>
+                    <nav class="navTop">    
+                        <ul>
+                            <!-- <li><a href="#"><img class="floatfloat" src="https://placeimg.com/100/48/nature" alt="graphics saying Company's Logo" title="Company's Logo"></a></li> -->
+                            <li><a href="#"><i class="icon-wallet"></i>1.500$<i class="icon-arrow-down-small"></i></a></li>
+                            <li><a href="#"><i class="icon-notification"></i></a></li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-profile"></i>
+                                    <span>Bon Jovi</span>
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="icon-quit"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav class="logo navLeft">
+                    <ul>
+                        <li>
+                            <a id="hamburger" href="#"><i class="fas fa-bars"></i></a>
+                        </li>
+                    </ul>
                     <div class="sidebar">
-                        <div class="logo">
-                            <h1><img src="https://placeimg.com/150/30/any" alt="Just do it logo | best stats on the web" title="the logo"></h1>
-                        </div>
                         <div class="sidebar-links">
                             <ul>
-                                <li><a href="index.html">General</a></li>
-                                <li><a href="details.html">Details</a></li>
-                                <li><a href="links.html">Links</a></li>
-                                <li><a href="#">Banners</a></li>
-                                <li><a href="#">Personal data</a></li>
-                                <li><a href="#">Payout</a></li>
-                                <li><a href="#">Postback</a></li>
+                                <li><a href="index.html"><i class="icon-general"></i>General</a></li>
+                                <li><a href="details.html"><i class="icon-details"></i>Details</a></li>
+                                <li><a href="links.html"><i class="icon-links"></i>Links</a></li>
+                                <li><a href="#"><i class="icon-banners"></i>Banners</a></li>
+                                <li><a href="personal_data.html"><i class="icon-personaldata"></i>Personal data</a></li>
+                                <li><a href="#"><i class="icon-payout"></i>Payout</a></li>
+                                <li><a href="#"><i class="icon-postback"></i>Postback</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col col-10">
+                </nav>
+            <div class="row">
+                <div class="col col-sm-12 col-xl-12">
                     <article>
-                        <nav>
-                            <ul>
-                                <li><a href="#">Number</a></li>
-                                <li><a href="#">Alert</a></li>
-                                <li><a href="#">Name</a></li>
-                                <li><a href="#">Logout</a></li>
-                            </ul>
-                        </nav>
-                        <section class="chart">
-                            <h2 class="underline header-font">Detail Statistic</h2>
-                            <div class="time-period">
-                                <p>Date 1 | Date 2</p>
-                                <button class="btn-sq-attract">Refresh arrow</button>
-                            </div>
-                            <div>
-                                <p>2x2 table</p>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>ABC 123</td>
-                                            <td>ABC 123</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ABC 123</td>
-                                            <td>ABC 123</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </section>
+                        <div class="content-container">
+                            <section class="chart">
+                                <div class="sectionHeader">
+                                    <h2 class="underline header-font">Detail statistics</h2>
+                                </div>
+                                <div class="time-period underline">
+                                    <div>
+                                        <input type="date">
+                                        <input type="date">
+                                        <i class="icon-calendar"></i>
+                                    </div>
+                                    <button class="btn-sq-attract"><i class="icon-refresh"></i></button>
+                                </div>
+                                <div class="sectionContainer">
+                                    <div class="details-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Tracker name
+                                                        <div>
+                                                            <i class="icon-arrow-up"></i>
+                                                        </div>
+                                                    </th>
+                                                    <th>Initialed date</th>
+                                                    <th>Visits</th>
+                                                    <th>Unique</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>aff/sam_test</td>
+                                                    <td>17/08/18 (11:37)</td>
+                                                    <td>232</td>
+                                                    <td>114</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>aff/leo_test</td>
+                                                    <td>16/08/18 (10:23)</td>
+                                                    <td>232</td>
+                                                    <td>104</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>aff/sam_test</td>
+                                                    <td>15/08/18 (14:01)</td>
+                                                    <td>232</td>
+                                                    <td>112</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="paginationWrapper">
+                                    <div class="pagination">
+                                        <a href="#"><i class="icon-arrow-left"></i></a>
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#"><i class="icon-arrow-right"></i></a>
+                                    </div>
+                                </div> 
+                            </section>
+                            
+                        </div>
                     </article>
                 </div>
             </div>
+            <div class="overlay" id="overlay">
+                <div class="modal" id="myModal">
+                    <div class="btn-close js--close-modal">x</div>
+                    <h4>This is my modal</h4>
+                    <p>Bacon ipsum dolor amet t-bone biltong venison chicken tail burgdoggen turducken swine tri-tip, jowl strip steak pork loin alcatra. Ham hock ribeye picanha flank ground round, rump bresaola landjaeger turkey buffalo swine pig t-bone cow.</p>
+                    <button class="js--close-modal">Okay</button>
+                </div>
+            </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

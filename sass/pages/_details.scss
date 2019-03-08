@@ -1,0 +1,118 @@
+.paginationWrapper {
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.pagination {
+    display: inline-block;
+
+    a {
+        color: $link-colour;
+        float: left;
+        padding: 8px 16px;
+    }
+}
+
+.details-table {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: $page-font-size;
+
+
+        th {
+            color: $supportingColour3;
+            
+            div {
+                display: inline;
+                i {
+                    float: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        th, td {
+            text-align: left;
+            line-height: 58px;
+            border-bottom: 1px solid $basic-hover;
+            padding-left: 10px;
+        }
+    }
+}
+
+@media not all and (hover:none) {
+
+    .pagination a:hover {
+        background: $basic-hover;
+        color: $supportingColour1;
+    }
+
+    .details-table {
+
+        thead th:hover {
+            background: $basic-hover;
+        }
+        
+        tbody > tr:hover {
+            background: $basic-hover;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .details-table {
+        
+        table, thead, tbody, tr, th, td {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr:nth-of-type(even) {
+            background: $basic-hover;
+
+            td {
+                border-bottom: 1px solid $supportingColour1;
+            }
+        }
+
+        table {
+            td {
+                border: none;
+                // border-bottom: 1px solid $basic-hover;
+                position: relative;
+                padding-left: 50%;
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 45%;
+                    padding: 0 10px;
+                    white-space: nowrap;
+                }
+
+                &:nth-of-type(1):before {
+                    content: "Tracker name"
+                }
+
+                &:nth-of-type(2):before {
+                    content: "Initialed date"
+                }
+
+                &:nth-of-type(3):before {
+                    content: "Visits"
+                }
+
+                &:nth-of-type(4):before {
+                    content: "Unique"
+                }
+            }
+        }
+    }
+}

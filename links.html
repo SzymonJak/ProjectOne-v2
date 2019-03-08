@@ -4,98 +4,136 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ProjectOne - main</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="sass/components/Glyphter.css">
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col col-2 sidebar">
+                <div class="col col-xl-10">
+                        <div class="floatfloat">
+                                <a href="#"><img src="https://placeimg.com/100/48/nature" alt="graphics saying Company's Logo" title="Company's Logo"></a>
+                            </div>
+                    <nav class="navTop">    
+                        <ul>
+                            <!-- <li><a href="#"><img class="floatfloat" src="https://placeimg.com/100/48/nature" alt="graphics saying Company's Logo" title="Company's Logo"></a></li> -->
+                            <li><a href="#"><i class="icon-wallet"></i>1.500$<i class="icon-arrow-down-small"></i></a></li>
+                            <li><a href="#"><i class="icon-notification"></i></a></li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-profile"></i>
+                                    <span>Bon Jovi</span>
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="icon-quit"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <nav class="logo navLeft">
+                    <ul>
+                        <li>
+                            <a id="hamburger" href="#"><i class="fas fa-bars"></i></a>
+                        </li>
+                    </ul>
                     <div class="sidebar">
-                        <div class="logo">
-                            <h1><img src="https://placeimg.com/150/30/any" alt="Just do it logo | best stats on the web" title="the logo"></h1>
-                        </div>
                         <div class="sidebar-links">
                             <ul>
-                                <li><a href="index.html">General</a></li>
-                                <li><a href="details.html">Details</a></li>
-                                <li><a href="links.html">Links</a></li>
-                                <li><a href="#">Banners</a></li>
-                                <li><a href="#">Personal data</a></li>
-                                <li><a href="#">Payout</a></li>
-                                <li><a href="#">Postback</a></li>
+                                <li><a href="index.html"><i class="icon-general"></i>General</a></li>
+                                <li><a href="details.html"><i class="icon-details"></i>Details</a></li>
+                                <li><a href="links.html"><i class="icon-links"></i>Links</a></li>
+                                <li><a href="#"><i class="icon-banners"></i>Banners</a></li>
+                                <li><a href="personal_data.html"><i class="icon-personaldata"></i>Personal data</a></li>
+                                <li><a href="#"><i class="icon-payout"></i>Payout</a></li>
+                                <li><a href="#"><i class="icon-postback"></i>Postback</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col col-10">
+                </nav>
+            <div class="row">
+                <div class="col col-sm-12 col-xl-12">
                     <article>
-                        <nav>
-                            <ul>
-                                <li><a href="#">Number</a></li>
-                                <li><a href="#">Alert</a></li>
-                                <li><a href="#">Name</a></li>
-                                <li><a href="#">Logout</a></li>
-                            </ul>
-                        </nav>
-                        <section>
-                            <h2 class="underline header-font">Links</h2>
-                            <div class="linksTable">
-                                <button class="btn-attract">+ add new</button>
-                                <div class="table-container">
-                                    <table class="tableStandard">
-                                        <tbody>
-                                            <tr>
-                                                <th>first</th>
-                                                <td><a href="#">link to sth1</a></td>
-                                                <td>
-                                                    <div>
-                                                        <i class="icon-links"></i>
-                                                        <i class="icon-trash"></i>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>second</th>
-                                                <td><a href="#">link to sth2</a></td>
-                                                <td>
-                                                    <i class="icon-links"></i>
-                                                    <i class="icon-trash"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>third</th>
-                                                <td><a href="#">link to sth3link to sth3link to sth3</a></td>
-                                                <td>
-                                                    <i class="icon-links"></i>
-                                                    <i class="icon-trash"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>fourth</th>
-                                                <td><a href="#">link to sth4</a></td>
-                                                <td>
-                                                    <i class="icon-links"></i>
-                                                    <i class="icon-trash"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>fifth</th>
-                                                <td><a href="#">link to sth5</a></td>
-                                                <td>
-                                                    <i class="icon-links"></i>
-                                                    <i class="icon-trash"></i>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div class="content-container">
+                            <section>
+                                <h2 class="underline header-font">Links</h2>
+                                <div class="linksTable">
+                                    <button class="btn-attract">+ add new</button>
+                                    <div class="table-container">
+                                        <table class="tableStandard">
+                                            <tbody>
+                                                <tr>
+                                                    <th>first</th>
+                                                    <td><a href="#">link to sth1</a></td>
+                                                    <td>
+                                                        <div>
+                                                            <i class="icon-links"></i>
+                                                            <i class="icon-trash"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>second</th>
+                                                    <td><a href="#">link to sth2</a></td>
+                                                    <td>
+                                                        <div>
+                                                            <i class="icon-links"></i>
+                                                            <i class="icon-trash"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>third</th>
+                                                    <td><a href="#">link to sth3link to sth3link to sth3</a></td>
+                                                    <td>
+                                                        <div>
+                                                            <i class="icon-links"></i>
+                                                            <i class="icon-trash"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>fourth</th>
+                                                    <td><a href="#">link to sth4</a></td>
+                                                    <td>
+                                                        <div>
+                                                            <i class="icon-links"></i>
+                                                            <i class="icon-trash"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>fifth</th>
+                                                    <td><a href="#">link to sth5</a></td>
+                                                    <td>
+                                                        <div>
+                                                            <i class="icon-links"></i>
+                                                            <i class="icon-trash"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button class="btn-attract">+ add new</button>
                                 </div>
-                                <button class="btn-attract">+ add new</button>
-                            </div>
-                        </section>
+                            </section>
+                        </div>
                     </article>
                 </div>
             </div>
+            <div class="overlay" id="overlay">
+                <div class="modal" id="myModal">
+                    <div class="btn-close js--close-modal">x</div>
+                    <h2 class="underline header-font">Add new link</h2>
+                    <div class="table-container">
+                        <input type="text" name="link_title" placeholder='&#xf075; Some Input Text'>
+                        <input type="text" name="link_address" placeholder="http://">
+                        <button class="btn-long-attract js--close-modal">Enter</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

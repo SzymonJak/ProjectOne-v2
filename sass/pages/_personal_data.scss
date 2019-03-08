@@ -1,35 +1,44 @@
 
 
 .myForm {
-    width: 320px;
-    margin: 0 auto;
+    // width: 100%;
+    // margin: 0 auto;
     padding: 24px 0;
     font-size: $page-font-size;
-    
 
     form {
+
+        span {
+            display: block;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .formButton {
+            text-align: center;
+
+            button {
+                color: $supportingColour1; //why color set in -buttons.scss has been reset
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .formStyling {
         display: grid;
         grid-template-columns: 150px 1fr;
         grid-gap: 5px;
-    }
-
-    label {
-        grid-column: 1/2;
-        color: $basic-hover;
-    }
-
-    input {
-        grid-column: 2/3;
-    }
-
-    button {
-        grid-column: 1/3;
+        width: 320px;
         margin: 0 auto;
-        color: $supportingColour1; //why color set in -buttons.scss has been reset
-    }
 
-    span {
-        grid-column: 1/3;
-        margin-bottom: 24px;
+        label {
+            grid-column: 1/2;
+            color: $basic-hover;
+        }
+
+        input {
+            grid-column: 2/3;
+            
+        }
     }
 }

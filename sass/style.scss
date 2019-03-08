@@ -8,6 +8,7 @@
 @import 'components/text-styles';
 @import 'pages/links';
 @import 'pages/personal_data';
+@import 'pages/details';
 
 a {
     text-decoration: none;
@@ -21,8 +22,9 @@ a {
     width: 48px;
     overflow: hidden;
     transition: width linear .7s;
-    // z-index: 1;
+    z-index: 1;
     background: $basic-colour;
+    opacity: .9;
 
     ul {
     margin: 0;
@@ -37,6 +39,14 @@ a {
     a {
         display: block;
         color: $basic-hover;
+
+        img {
+            position: fixed;
+            display: inline-block;
+            left: 48px;
+            top: 0;
+            z-index: 2;
+        }
     }
 }
 
@@ -45,13 +55,13 @@ a {
 }
 
 .navTop {
-    // z-index: 1;
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: $supportingColour1;
-    line-height: 48px;
+    
     border-bottom: solid 1px $basic-hover;
 
     ul {
@@ -71,23 +81,17 @@ a {
         display: block;
         color: $basic-hover;
 
+        i {
+            padding: 0 8px;
+            line-height: 48px;
+        }
+
         span {
             color: $link-colour;
             font-size: $small-font-size;
+            vertical-align: middle;
         }
     }
-
-    i {
-        padding: 0 8px;
-    }
-}
-
-.floatfloat {
-    position: fixed;
-    display: inline-block;
-    left: 48px;
-    z-index: 2;
-    
 }
 
 img {
@@ -103,6 +107,7 @@ h1 {
     font-family: $brand-font;
     background: $background-colour;
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -257,6 +262,7 @@ section {
     padding: 0 12px;
     margin: 0 12px;
     border: none;
+    background: none;
 
         .dot {
             height: 12px;
@@ -286,24 +292,20 @@ section {
 
 @media(max-width: 767px) {
 
-    .navRight {
+    .navTop {
         display: none;
-    }
-
-    img {
-      width: calc(100vw - 32px);
     }
 
     .navLeft {
         width: 100%;
         height: 48px;
         &.show {
-            height: 50vh;
+            height: 30vh;
         }
     }
 
     .content-container {
-        margin-top: 48px; 
+        margin-left: 0; 
     }
 
   }
@@ -312,7 +314,7 @@ section {
 
     .navLeft {    
         &.show {
-            width: 16.667%;
+            width: 148px;
         }
     }
 

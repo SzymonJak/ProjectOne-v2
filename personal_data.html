@@ -49,34 +49,56 @@
                     <h2 class="underline header-font">General statistics</h2>
                     <div class="myForm">
                         <form action="index.html" method="POST">
-                            <label for="myName">Name</label>
-                            <input required placeholder="Name" type="text" name="name" id="myName" required>
-                            <label for="mySurname">Surname</label>
-                            <input placeholder="Surname" type="text" name="surname" id="mySurname" required>
-                            <label for="myEmail">Email</label>
-                            <input placeholder="username@address.com" type="email" name="email" id="myEmail" required>
-                            <label for="myPhone">Phone number</label>
-                            <input placeholder="123 123 123" type="tel" minlength="9" maxlength="9" name="phone" id="myPhone">
-                            <span class="underline"></span>
-                            <label>Skype</label>
-                            <input placeholder="" type="text" name="skype">
-                            <label>ICQ</label>
-                            <input placeholder="" type="text" name="icq">
-                            <label>MSN</label>
-                            <input placeholder="" type="text" name="msn">
-                            <span class="underline"></span>
-                            <label>Wallet</label>
-                            <input placeholder="$$$" type="text" name="wallet">
-                            <span class="underline"></span>
-                            <label>Password</label>
-                            <input placeholder="" type="password" name="password" required>
-                            <label>Repeat</label>
-                            <input placeholder="" type="password" name="passwordRepeat" required>
-                            <span class="underline"></span>
-                            <button type="submit" class="btn-long-attract">Save</button>
+                            <div class="underline">
+                                <div class="formStyling">
+                                    <label for="myName">Name</label>
+                                    <input placeholder="Name" type="text" name="name" id="myName" required>
+                                    <label for="mySurname">Surname</label>
+                                    <input placeholder="Surname" type="text" name="surname" id="mySurname" required>
+                                    <label for="myEmail">Email</label>
+                                    <input placeholder="username@address.com" type="email" name="email" id="myEmail" required>
+                                    <label for="myPhone">Phone number</label>
+                                    <input placeholder="123 123 123" type="tel" minlength="9" maxlength="9" name="phone" id="myPhone">
+                                </div>
+                            </div>
+                            <div class="underline">
+                                <div class="formStyling">
+                                    <label>Skype</label>
+                                    <input placeholder="" type="text" name="skype">
+                                    <label>ICQ</label>
+                                    <input placeholder="" type="text" name="icq">
+                                    <label>MSN</label>
+                                    <input placeholder="" type="text" name="msn">
+                                </div>
+                            </div>
+                            <div class="underline">
+                                <div class="formStyling">
+                                    <label>Wallet</label>
+                                    <input placeholder="$$$" type="text" name="wallet">
+                                </div>
+                            </div>
+                            <div class="underline">
+                                <div class="formStyling">
+                                    <label>Password</label>
+                                    <input placeholder="" type="password" name="password" required>
+                                    <label>Repeat</label>
+                                    <input placeholder="" type="password" name="passwordRepeat" required>
+                                </div>
+                            </div>
+                            <div class="formButton">
+                                <button type="submit" class="btn-long-attract">Save</button>
+                            </div>
                         </form>
                     </div>
                 </section>
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="modal" id="myModal">
+                    <div class="btn-close js--close-modal">x</div>
+                    <h4>This is my modal</h4>
+                    <p>Bacon ipsum dolor amet t-bone biltong venison chicken tail burgdoggen turducken swine tri-tip, jowl strip steak pork loin alcatra. Ham hock ribeye picanha flank ground round, rump bresaola landjaeger turkey buffalo swine pig t-bone cow.</p>
+                    <button class="js--close-modal">Okay</button>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="js/script.js"></script>
