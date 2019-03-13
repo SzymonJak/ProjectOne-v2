@@ -16,9 +16,8 @@
 }
 
 .btn-long {
+    @extend .btn;
     width: 126px;
-    height: 40px;
-    border-radius: 5px;
 }
 
 .btn-basic {

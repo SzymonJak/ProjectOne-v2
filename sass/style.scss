@@ -9,6 +9,7 @@
 @import 'pages/links';
 @import 'pages/personal_data';
 @import 'pages/details';
+@import 'pages/new_postback';
 
 a {
     text-decoration: none;
@@ -39,10 +40,9 @@ a {
     a {
         display: block;
         color: $basic-hover;
-
+       
         img {
             position: fixed;
-            display: inline-block;
             left: 48px;
             top: 0;
             z-index: 2;
@@ -275,10 +275,6 @@ section {
 }
 
 @media not all and (hover:none) {
-    .sidebar-links a:hover {
-        background: $basic-hover;
-        color: $supportingColour1;
-    }
 
     .logo a:hover {
         background: $basic-hover;
@@ -302,6 +298,14 @@ section {
         &.show {
             height: 30vh;
         }
+
+        a {
+            img {
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
     }
 
     .content-container {
@@ -310,13 +314,11 @@ section {
 
   }
 
-  @media(min-width: 768px) {
+@media(min-width: 768px) {
 
     .navLeft {    
         &.show {
             width: 148px;
         }
     }
-
-
-  }
+}
