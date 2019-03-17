@@ -13,6 +13,25 @@
   margin: 0;
 }
 
+.container {
+  font-family: $brand-font;
+  background: $background-colour;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content-container {
+  margin-top: calc(48px + 16px);
+  margin-left: 48px;
+}
+
+.sectionContainer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 0 32px;
+}
+
 .tableStandard {
   border-collapse: collapse;
   font-size: $page-font-size;

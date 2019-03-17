@@ -64,87 +64,112 @@
                 <div class="col col-sm-12 col-xl-12">
                     <article>
                         <div class="content-container">
-                            <section>
+                            <section class="postback">
                                 <div>
-                                    <h2 class="underline header-font newColor">New Postback</h2>
+                                    <h2 class="underline header-font">New Postback</h2>
                                 </div>
-                                <div class="sectionContainer">
+                                <div>
                                     <p>You can add a new post here</p>
-                                    <div class="row">
-                                        <div class="textBox">
-                                            <div class="col col-md-6 col-sm-6">
-                                                <label for="textArea1">Signup</label>
-                                                <textarea id="textArea1" name="signup" placeholder="add some text" rows="8"></textarea>
+                                    <div class="textBox underline">
+                                        <div class="row">
+                                            <div class="col col-md-6 col-sm-12">
+                                                <div class="box1">
+                                                    <label for="textArea1">Signup</label>
+                                                    <textarea id="textArea1" name="signup" placeholder="add some text" rows="8"></textarea>
+                                                </div>
                                             </div>
-                                            <div class="col col-md-6 col-sm-6">
-                                                <label for="textArea2">Deposit</label>
-                                                <textarea id="textArea2" name="deposit" placeholder="add some text as well" rows="8"></textarea>
+                                            <div class="col col-md-6 col-sm-12">
+                                                <div class="box2">
+                                                    <label for="textArea2">Deposit</label>
+                                                    <textarea id="textArea2" name="deposit" placeholder="add some text as well" rows="8"></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col col-md-4 col-sm-4">
-                                            <form action="index.html" method="POST">
-                                                <select name="http://">
-                                                    <option value="www.wikipedia.org">Wikipedia</option>
-                                                    <option value="www.google.com">Google</option>
-                                                    <option value="www.w3schools.com">w3schools</option>
-                                                </select>
-                                            </form>
-                                        </div>
-                                        <div class="col col-md-4 col-sm-4">
-                                            <form>
-                                                <select name="Country">
-                                                    <option value="poland">Poland</option>
-                                                    <option value="germany">Germany</option>
-                                                    <option value="czech">the Czech Republic</option>
-                                                </select>
-                                            </form>
-                                        </div>
-                                        <div class="col col-md-4 col-sm-4">
-                                            <form>
-                                                <select name="Color">
-                                                    <option value="blue">Blue</option>
-                                                    <option value="grey">Grey</option>
-                                                    <option value="white">White</option>
-                                                </select>
-                                            </form>
+                                    <div class="underline">
+                                        <div class="row">
+                                            <div class="col col-md-4 col-sm-12">
+                                                <div class="dropdown">
+                                                    <form action="index.html" method="POST">
+                                                        <label for="dropLinks">Postback type</label>
+                                                        <select id="dropLinks" name="http://">
+                                                            <option value="www.wikipedia.org">Wikipedia</option>
+                                                            <option value="www.google.com">Google</option>
+                                                            <option value="www.w3schools.com">w3schools</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-4 col-sm-12">
+                                                <div class="dropdown">
+                                                    <form>
+                                                        <label for="dropCountry">To Countries</label>
+                                                        <select id="dropCountry" name="Country">
+                                                            <option value="poland">Poland</option>
+                                                            <option value="germany">Germany</option>
+                                                            <option value="czech">the Czech Republic</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-4 col-sm-12">
+                                                <div class="dropdown">
+                                                    <form>
+                                                        <label for="dropColor">Sending options</label>
+                                                        <select id="dropColor" name="Color">
+                                                            <option value="blue">Blue</option>
+                                                            <option value="grey">Grey</option>
+                                                            <option value="white">White</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div>
-                                            <div class="col col-md-6 col-sm-6">
-                                                <label for="checkbox1">
-                                                    <p>checkNumber</p>
-                                                </label>
-                                                <input type="checkbox" id="checkbox1" name=checkNumber>
-                                                <label for="checkbox2">
-                                                    <p>noAnswer</p>
-                                                </label>
-                                                <input type="checkbox" id="checkbox3" name=checkNumber>
-                                                <label for="checkbox3">
-                                                    <p>noCall</p>
-                                                </label>
-                                                <input type="checkbox" id="checkbox3" name=checkNumber>
-                                                <label for="checkbox4">
-                                                    <p>callAgain</p>
-                                                </label>
-                                                <input type="checkbox" id="checkbox4" name=checkNumber>
+                                    <div class="checkAndRange underline">
+                                        <div class="row">
+                                            <div class="col col-md-6 col-sm-12">
+                                                <div class="check">
+                                                    <p>not</p><p>send status</p>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input type="checkbox" id="checkbox1" name=checkNumber></td>
+                                                                <td><label for="checkbox1">checkNumber</label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" id="checkbox2" name=checkNumber></td>
+                                                                <td><label for="checkbox2">noAnswer</label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" id="checkbox3" name=checkNumber></td>
+                                                                <td><label for="checkbox3">noCall</label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" id="checkbox4" name=checkNumber></td>
+                                                                <td><label for="checkbox4">callAgain</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>    
+                                                </div>
                                             </div>
-                                            <div class="col col-md-6 col-sm-6">
+                                            <div class="col col-md-6 col-sm-12">
                                                 <div class="slider">
                                                     <label for="slider1">Send after:</label>
                                                     <input type="range" id="slider1" name="sendAfter" list="tickmarks" min="0" max="168" step="6" value="48">
                                                     <datalist id="tickmarks">
-                                                        <option value="0" label="0">
-                                                        <option value="168" label="168">
+                                                        <option value="0" label="0"></option>
+                                                        <option value="10"></option>
+                                                        <option value="50"></option>
+                                                        <option value="90"></option>
+                                                        <option value="168" label="168"></option>
                                                     </datalist>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <button class="btn-long-attract">Create Pixel</button>
-                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="buttonPosition">
+                                        <button class="btn-long-attract">Create Pixel</button>
                                     </div>
                                 </div>
                             </section>

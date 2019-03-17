@@ -21,7 +21,7 @@ a {
     left: 0;
     height: 100%;
     width: 48px;
-    overflow: hidden;
+    overflow: hidden; // psuje wyświetlanei w safari
     transition: width linear .7s;
     z-index: 1;
     background: $basic-colour;
@@ -103,22 +103,8 @@ h1 {
     padding: 0;
 }
 
-.container {
-    font-family: $brand-font;
-    background: $background-colour;
-    max-width: 1280px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.content-container {
-    margin-top: calc(48px + 16px);
-    margin-left: 48px;
-}
-
 section {
     background: $supportingColour1;
-    /* missig bottom margin or border */
     box-shadow: 1px 1px 3px $supportingColour2;
     margin: 0 16px 16px;
 
@@ -133,12 +119,12 @@ section {
     border-bottom: 1px solid $basic-hover;
 }
 
-.sidebar {
-    padding-top: 16px;
-}
-
 .show {
     display: block;
+}
+
+.sidebar {
+    padding-top: 16px;
 }
 
 .sidebar-links {
@@ -165,12 +151,6 @@ section {
             padding: 0 20px;
         }
     }
-}
-
-.sectionContainer {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 24px 0 32px;
 }
 
 .chart {
@@ -301,9 +281,9 @@ section {
 
         a {
             img {
-                left: 0;
+                left: none;
+                left: unset;
                 right: 0;
-                margin: 0 auto;
             }
         }
     }

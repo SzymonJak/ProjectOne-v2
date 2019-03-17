@@ -369,6 +369,25 @@ template {
   margin: 0;
 }
 
+.container {
+  font-family: "Open Sans", sans-serif;
+  background: #f5f5f2;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content-container {
+  margin-top: calc(48px + 16px);
+  margin-left: 48px;
+}
+
+.sectionContainer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 0 32px;
+}
+
 .tableStandard {
   border-collapse: collapse;
   font-size: 12px;
@@ -812,10 +831,6 @@ template {
   font-family: "Glyphter", "Open Sans", sans-serif;
 }
 
-.modal button {
-  color: #fff;
-}
-
 .modal.show {
   display: block;
 }
@@ -965,6 +980,108 @@ template {
   }
 }
 
+.postback div > p {
+  margin: 16px 0 0 12px;
+}
+
+.postback .box1, .postback .box2 {
+  width: 100%;
+}
+
+.postback .box1 label, .postback .box2 label {
+  display: block;
+  padding: 8px 0;
+}
+
+.postback .box1 textarea, .postback .box2 textarea {
+  width: 98%;
+  min-height: 50px;
+  background-color: transparent;
+}
+
+.postback .dropdown {
+  width: 100%;
+}
+
+.postback .dropdown label {
+  display: block;
+  padding: 8px 0;
+}
+
+.postback .dropdown select {
+  width: 98%;
+}
+
+.postback .checkAndRange {
+  padding: 0;
+}
+
+.postback .checkAndRange .check {
+  border-right: 1px solid #979797;
+  padding: 16px 0;
+}
+
+.postback .checkAndRange .check p {
+  display: inline;
+  color: #979797;
+  font-weight: bold;
+}
+
+.postback .checkAndRange .check p:first-of-type {
+  color: #f00;
+  text-transform: uppercase;
+}
+
+.postback .checkAndRange .check table {
+  margin-left: 16px;
+}
+
+.postback .checkAndRange .check td {
+  padding: 8px;
+}
+
+.postback .checkAndRange .slider {
+  text-align: center;
+  padding: 16px;
+}
+
+.postback .checkAndRange .slider label {
+  display: block;
+  text-align: left;
+  color: #979797;
+  font-weight: bold;
+}
+
+.postback .checkAndRange .slider input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.postback .checkAndRange .slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0;
+  width: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f58220;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.postback .checkAndRange .slider input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #f58220;
+  border-radius: 1.3px;
+}
+
+.postback .buttonPosition {
+  padding: 16px;
+  text-align: right;
+}
+
 a {
   text-decoration: none;
 }
@@ -1056,22 +1173,8 @@ h1 {
   padding: 0;
 }
 
-.container {
-  font-family: "Open Sans", sans-serif;
-  background: #f5f5f2;
-  max-width: 1280px;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.content-container {
-  margin-top: calc(48px + 16px);
-  margin-left: 48px;
-}
-
 section {
   background: #fff;
-  /* missig bottom margin or border */
   box-shadow: 1px 1px 3px #000;
   margin: 0 16px 16px;
 }
@@ -1086,12 +1189,12 @@ section h2 {
   border-bottom: 1px solid #979797;
 }
 
-.sidebar {
-  padding-top: 16px;
-}
-
 .show {
   display: block;
+}
+
+.sidebar {
+  padding-top: 16px;
 }
 
 .sidebar-links ul {
@@ -1115,12 +1218,6 @@ section h2 {
 
 .sidebar-links ul i {
   padding: 0 20px;
-}
-
-.sectionContainer {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 24px 0 32px;
 }
 
 .chart table, .chart img {
@@ -1238,9 +1335,9 @@ section h2 {
     height: 30vh;
   }
   .navLeft a img {
-    left: 0;
+    left: none;
+    left: unset;
     right: 0;
-    margin: 0 auto;
   }
   .content-container {
     margin-left: 0;
