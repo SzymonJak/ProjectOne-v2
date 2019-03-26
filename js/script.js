@@ -4,8 +4,11 @@ var navLeft = document.querySelector('.navLeft');
 
 var mySidebar = document.getElementById('hamburger');
 
+var contentContainer = document.querySelector('.content-container');
+
 mySidebar.addEventListener('click', function(){
   navLeft.classList.toggle('show');
+  contentContainer.classList.toggle('container-narrow');
 });
 
 

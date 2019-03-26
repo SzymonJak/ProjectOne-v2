@@ -24,6 +24,11 @@
 .content-container {
   margin-top: calc(48px + 16px);
   margin-left: 48px;
+  transition: margin-left linear .7s;
+}
+
+.container-narrow {
+  display: block;
 }
 
 .sectionContainer {

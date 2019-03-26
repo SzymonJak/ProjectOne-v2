@@ -50,8 +50,12 @@ a {
     }
 }
 
+.show {
+    display: block;
+}
+
 #hamburger i {
-    padding: 16px 20px;
+    padding: 16px 17px;
 }
 
 .navTop {
@@ -119,10 +123,6 @@ section {
     border-bottom: 1px solid $basic-hover;
 }
 
-.show {
-    display: block;
-}
-
 .sidebar {
     padding-top: 16px;
 }
@@ -140,15 +140,17 @@ section {
 
         a {
             display: block;
-            line-height: 2em;
-            padding: 0;
+            line-height: 20px;
+            padding: 3px 0;
             color: $basic-hover;
             font-size: $small-font-size;
             white-space: nowrap;
         }
 
         i {
-            padding: 0 20px;
+            padding: 0 17px;
+            font-size: 16px;
+            vertical-align: middle;
         }
     }
 }
@@ -214,22 +216,23 @@ section {
 .myTable {
     padding-bottom: 32px;
 
+    .tableLeft {
+        float: left;
+        width: 320px;
+    }
+    
+    .tableRight {
+        float: right;
+        width: 320px;
+    }
+
     .tableStandard {
 
         th {
+            width: 175px;
             padding-right: 96px;
         }
     }
-}
-
-.tableLeft {
-    float: left;
-    width: 320px;
-}
-
-.tableRight {
-    float: right;
-    width: 320px;
 }
 
 .chartButtons {
@@ -289,7 +292,47 @@ section {
     }
 
     .content-container {
-        margin-left: 0; 
+        margin-left: 0;
+        &.container-narrow {
+            margin-top: calc(30vw + 16px);
+          }
+    }
+
+    .time-period {
+        padding: 12px;
+
+        div {
+            border: none;
+            display: block;
+
+            i {
+                display: none;
+            }
+        }
+
+        // &::before {
+        //     content: none;
+        // }
+
+        input[type=date] {
+            display: block;
+            margin: 0 auto 3px;
+            max-width: 80%;
+            border: 1px solid $basic-hover;
+           
+        }
+
+        button {
+            margin: 0;
+        }
+    }
+
+    .myTable {
+        margin: 0 auto;
+
+        .tableLeft, .tableRight {
+            width: 100%;
+        }
     }
 
   }
@@ -300,5 +343,11 @@ section {
         &.show {
             width: 148px;
         }
+    }
+
+    .content-container {
+        &.container-narrow {
+            margin-left: 148px;
+          }
     }
 }
