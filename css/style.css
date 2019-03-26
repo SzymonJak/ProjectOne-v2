@@ -1356,7 +1356,7 @@ section h2 {
     margin-left: 0;
   }
   .content-container.container-narrow {
-    margin-top: calc(30vw + 16px);
+    margin-top: calc(30vh + 16px);
   }
   .time-period {
     padding: 12px;
@@ -1365,10 +1365,10 @@ section h2 {
     border: none;
     display: block;
   }
-  .time-period div i {
+  .time-period div::before, .time-period div i {
     display: none;
   }
-  .time-period input[type=date] {
+  .time-period div input[type=date] {
     display: block;
     margin: 0 auto 3px;
     max-width: 80%;

@@ -294,7 +294,7 @@ section {
     .content-container {
         margin-left: 0;
         &.container-narrow {
-            margin-top: calc(30vw + 16px);
+            margin-top: calc(30vh + 16px);
           }
     }
 
@@ -305,21 +305,16 @@ section {
             border: none;
             display: block;
 
-            i {
+            &::before, i {
                 display: none;
             }
-        }
 
-        // &::before {
-        //     content: none;
-        // }
-
-        input[type=date] {
-            display: block;
-            margin: 0 auto 3px;
-            max-width: 80%;
-            border: 1px solid $basic-hover;
-           
+            input[type=date] {
+                display: block;
+                margin: 0 auto 3px;
+                max-width: 80%;
+                border: 1px solid $basic-hover;
+            }
         }
 
         button {
