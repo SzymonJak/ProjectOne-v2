@@ -156,10 +156,6 @@ section {
 }
 
 .chart {
-    table, img {
-        margin-left: auto;
-        margin-right: auto;
-        }
 
     .time-period {
         text-align: center;
@@ -185,10 +181,16 @@ section {
         border: 1px solid $basic-hover;
         display: inline-flex;
         position: relative;
+        
 
         i {
             color: $basic-hover;
-            padding: 10px 14px;
+            position: absolute;
+            z-index: 5;
+            right: 12px;
+            bottom: 8px;
+            // bottom: 6px;
+            // right: 14px;
         }
 
         &::before {
@@ -201,15 +203,26 @@ section {
             top: 0;
             bottom: 0;
             left: 0;
-            right: 40px;
+            right: 0;
             margin: auto;
         }
+
+        input[type=date] {
+            border: 0;
+            padding: 10px 10px;
+            position: relative;
+            z-index: 10;
+            background: rgba(255, 255, 255, .1);
+         //    appearance: none;
+         }
     }
 
-    input[type=date] {
-       border: 0;
-       padding: 5px 10px;
-       appearance: none; 
+    input::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    input::-webkit-calendar-picker-indicator {
+        opacity: 0;
     }
 }
 
@@ -217,20 +230,21 @@ section {
     padding-bottom: 32px;
 
     .tableLeft {
-        float: left;
+        // float: left;
         width: 320px;
+        padding-right: 30px;
     }
     
     .tableRight {
-        float: right;
+        // float: right;
         width: 320px;
+        padding-left: 30px;
     }
 
     .tableStandard {
-
-        th {
-            width: 175px;
-            padding-right: 96px;
+        th{
+            width: 100%;
+            line-height: 16px;
         }
     }
 }
@@ -327,6 +341,7 @@ section {
 
         .tableLeft, .tableRight {
             width: 100%;
+            padding: 8px 16px;
         }
     }
 
